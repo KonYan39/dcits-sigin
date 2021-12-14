@@ -1,0 +1,35 @@
+{
+  "properties": [
+    {
+      "name": "card.telegramApiUrl",
+      "type": "java.lang.String",
+      "description": "telegram机器人调用地址"
+    },
+    {
+      "name": "card.dingtalkWebHooks",
+      "type": "java.util.List",
+      "description": "钉钉机器人调用地址"
+    },
+    {
+      "name": "card.chat_id",
+      "type": "java.lang.String",
+      "description": "telegram 机器人燎日按id"
+    },{
+      "name": "card.getCardInfoByOpenId",
+      "type": "java.lang.String",
+      "description": "获取打卡的一些基本信息构建打卡json"
+    },{
+      "name": "card.cardUrl",
+      "type": "java.lang.String",
+      "description": "打卡地址"
+    },{
+      "name": "card.getCardedInfosByUserId",
+      "type": "java.lang.String",
+      "description": "获取打卡信息通过userId"
+    },{
+      "name": "card.userInfoList",
+      "type": "java.util.List<com.dcits.dx.card.pojo.UserInfo>",
+      "description": "获取打卡信息通过userId"
+    }
+  ]
+}

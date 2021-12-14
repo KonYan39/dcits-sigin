@@ -1,0 +1,43 @@
+card:
+  telegramApiUrl: https://api.telegram.org/bot1932143695:AAE3l5NmTJCcGUhd4xjfFPr9LVTjcgCv7vU/sendMessage # telegram api url
+  dingtalkWebHooks:
+    - 'https://oapi.dingtalk.com/robot/send?access_token=aff621292b3c26f1b6a2f1b00bfbe4b851309945f82d7f7b5689068d8232316f'
+  chat_id: 1409348252
+  getCardInfoByOpenId: https://itswkwc.dcits.com/wechatserver/sign/getSignRuleData?openId= #获取打卡人信息 用于构建打卡参数 GET
+  cardUrl: https://itswkwc.dcits.com/wechatserver/sign/saveSignRuleData #打卡接口 POST
+  getCardedInfosByUserId: https://itswkwc.dcits.com/wechatserver/sign/getCard?userId= #获取当天打卡信息 GET
+  userInfoList:  # 时区统一按东八区标准
+#    - openId: ovfnh5G6wcX0dDzowQZC7T7YeZ-I
+#      userName: 丁鑫
+#      atPhoneNum: 18861856639
+#      firstCardHour: 8
+#      firstCardMinute: 0
+#      lastCardHour: 18
+#      lastCardMinute: 30
+      #currentDayCardCounts: 1 #deprecated 系统启动后直接从接口获取
+  is-exception: false
+  workdays:
+    - 09-18
+    - 09-26
+    - 10-09
+  holidays:
+    - 09-19
+    - 09-20
+    - 09-21
+    - 10-01
+    - 10-02
+    - 10-03
+    - 10-04
+    - 10-05
+    - 10-06
+    - 10-07
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ec2-54-211-160-34.compute-1.amazonaws.com:5432/d6l70d4che54pm
+    username: nhhqhmlzaeatwz
+    password: 749e360c13cf103786a6ab7505c2a2fee61119095ed1306b9f844e06bf7d18b4
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql日志
+holdRunning: 'https://script.google.com/macros/s/AKfycbws3fC8MvMnKB4dI-juuHnBkpAyWai-Ic2C0wOD5p2PPRKPSR7gNS3ci5hEw9vHFT6e/exec'

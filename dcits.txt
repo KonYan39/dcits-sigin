@@ -1,0 +1,18 @@
+{
+    "status": 0,
+    "message": "query ok",
+    "result": {
+        "ip": "120.195.203.254",
+        "location": {
+            "lat": 31.567756,
+            "lng": 120.241378
+        },
+        "ad_info": {
+            "nation": "中国",
+            "province": "江苏省",
+            "city": "无锡市",
+            "district": "滨湖区",
+            "adcode": 320211
+        }
+    }
+}
